@@ -1,7 +1,7 @@
 const Page = () => {
   return (
-    <div className="w-screen h-screen p-5 flex flex-col items-center justify-center">
-      <div className="mb-16 text-center">
+    <div className="w-screen p-5 flex flex-col items-center justify-start">
+      <div className="mb-4 text-center">
         <a
           href="https://www.b7web.com.br/"
           target="_blank"
@@ -11,7 +11,9 @@ const Page = () => {
           Exercícios utilizando TailwindCSS através do curso B7Web
         </a>
       </div>
-      <div className="mb-16 text-center">
+
+      {/* Exercício 1 */}
+      <div className="mb-4 text-center">
         <h2 className="text-xl font-semibold">Exercício 1</h2>
         <p className="">Design de Botões</p>
         <div className="mt-4 flex flex-col items-center space-y-4">
@@ -24,7 +26,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mb-16 text-center">
+      {/* Exercício 2 */}
+      <div className="mb-4 text-center">
         <h2 className="text-xl font-semibold">Exercício 2</h2>
         <p className="">Alerta de Erro</p>
         <div className="mt-4 border-l-4 bg-yellow-100 rounded-sm border-yellow-500 p-3 text-yellow-700">
@@ -34,26 +37,73 @@ const Page = () => {
           </a>
         </div>
       </div>
-      <div className="mb- text-center"></div>
-      <h2 className="text-xl font-semibold">Exercício 3</h2>
-      <p className="">Invite Card</p>
-      <div className="mt-4 w-96 rounded-md border border-gray-500 bg-white p-4">
-        <div>
-          <div className="inline-block">
-            <img className="w-14 h-14 rounded-full" src="images/avatar.jpg"/>
+
+      {/* Exercício 3 - Invite Card */}
+      <div className="mb-4 text-center">
+        <h2 className="text-xl font-semibold">Exercício 3</h2>
+        <p className="">Invite Card</p>
+        <div className="mt-4 w-96 rounded-md border border-gray-500 bg-white p-4">
+          <div>
+            <div className="inline-block">
+              <img className="w-14 h-14 rounded-full" src="images/avatar.jpg" />
+            </div>
+            <div className="inline-block ml-5">
+              <div className="text-black pb-2">Guilherme Lopes</div>
+              <div className="text-gray-400">Te mandou um convite!</div>
+            </div>
           </div>
-          <div className="inline-block ml-5">
-            <div className="text-black pb-2">Guilherme Lopes</div>
-            <div className="text-gray-400">Te mandou um convite!</div>
+          <div className="mt-4">
+            <button className="rounded-md px-5 py-2 bg-blue-800 text-white">
+              Aceitar
+            </button>
+            <button className="ml-3 rounded-md px-5 py-2 border border-gray-200 text-black">
+              Negar
+            </button>
           </div>
         </div>
-        <div className="mt-4">
-          <button className="rounded-md px-5 py-2 bg-blue-800 text-white">
-            Aceitar
-          </button>
-          <button className="ml-3 rounded-md px-5 py-2 border border-gray-200 text-black">
-            Negar
-          </button>
+      </div>
+
+      {/* Exercício 4 - Sistema de Login */}
+      <div className="mb-4 text-center">
+        <h2 className="text-xl my-7 font-semibold">Exercício 4</h2>
+        <div className="w-screen bg-gray-900 p-5">
+          <h1 className="text-3xl font-bold text-center">Sistema de Login</h1>
+
+          {/* Campo de Email */}
+          <div className="my-6">
+            <label className="block text-lg mb-2" htmlFor="emailField">
+              Endereço de e-mail
+            </label>
+            <input
+              className="w-full p-2 rounded-md text-lg bg-gray-800 border border-gray-700 outline-gray-400"
+              type="email"
+              id="emailField"
+            />
+          </div>
+
+          {/* Campo de Senha */}
+          <div className="my-6">
+            <label className="block text-lg mb-2" htmlFor="passwordField">
+              Senha
+            </label>
+            <input
+              className="w-full p-2 rounded-md text-lg bg-gray-800 border border-gray-700 outline-gray-400"
+              type="password"
+              id="passwordField"
+            />
+          </div>
+
+          <div className="my-6">
+            <button className="w-full p-2 rounded-md text-lg font-bold border-none text-white bg-gray-700">
+              Entrar
+            </button>
+          </div>
+          <div className="text-center text-gray-300">
+            Não é membro?{' '}
+            <a className="font-bold text-gray-200" href="">
+              Faça seu cadastro agora!
+            </a>
+          </div>
         </div>
       </div>
     </div>
