@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
+
 
 export const metadata: Metadata = {
   title: 'Exercícios 2',
@@ -20,9 +22,9 @@ const Page = () => {
 
         {/* Pages Interaction */}
         <div className="mt-auto text-center">
-          <a href="/" className="underline text-white">
+          <Link href="/" className="underline text-white">
             Página 1
-          </a>
+          </Link>
         </div>
       </div>
     </div>
