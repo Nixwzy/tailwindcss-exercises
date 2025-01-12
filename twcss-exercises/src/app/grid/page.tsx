@@ -50,16 +50,17 @@ const Page = () => {
         </div>
         {/* Pages Interaction */}
       <div className="bg-gray-900 text-white fixed bottom-0 w-full flex justify-center gap-4 py-4">
-        <Link href="/" title="Ir para a Página Inicial" className="underline text-white">
+        <Link href="/" className="underline text-white">
           Página 1
         </Link>
-        <Link title="Ir para a Página 2" href="page1" className="underline">
+        <Link href="page1" className="underline">
           Página 2
         </Link>
       </div>
       </div>
     );
   };
+  
   
   export default Page;
   

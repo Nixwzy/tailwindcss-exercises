@@ -44,10 +44,10 @@ const Page = () => {
       </div>
       {/* Pages Interaction */}
       <div className="bg-gray-900 text-white fixed bottom-0 w-full flex justify-center gap-4 py-4">
-        <Link title="Ir para a Página Inicial "href="/" className="underline text-white">
+        <Link href="/" className="underline text-white">
           Página 1
         </Link>
-        <Link title="Página de Grid" href="grid" className="underline">
+        <Link href="grid" className="underline">
           Página 3
         </Link>
       </div>
