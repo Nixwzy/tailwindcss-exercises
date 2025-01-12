@@ -13,8 +13,8 @@ const Page = () => {
 
   return (
     <div className="bg-white w-screen h-screen text-black">
-      <div className="container mx-auto px-4">
-        <div className="p-3 rounded-md bg-slate-700">
+      <div className="container mx-auto px-4 py-4">
+        <div className="p-3 rounded-md bg-slate-700 ">
           <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
             <div className="w-full h-60 border rounded-sm border-white bg-center col-span-2 md:col-span-2 md:row-span-2 md:h-full bg-house-front"></div>
             <div className="w-full h-32 border rounded-sm border-white bg-center md:h-60 bg-house-interior"></div>
@@ -61,7 +61,7 @@ const Page = () => {
       </div>
 
       {/* Pages Interaction */}
-      <div className="bg-gray-900 text-white fixed bottom-0 w-full flex justify-center gap-4 py-4">
+      <div className="bg-gray-900 text-white bottom-0 w-full flex justify-center gap-4 py-4">
         {pages.map((page, index) => (
           <div key={index}>
             <Link href={page.href} className="underline text-white">
