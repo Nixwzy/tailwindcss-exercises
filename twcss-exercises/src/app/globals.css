@@ -19,3 +19,19 @@ body {
   background: var(--background);
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
+
+.bg-house-front {
+  background-image: url('/images/house_front.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-house-interior{
+  background-image: url('/images/house_interior.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-house-interior2 {
+  background-image: url('/images/house_interior2.jpg');
+  background-size: cover;
+  background-position: center;
+}

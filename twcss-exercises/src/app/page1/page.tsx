@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Exercícios 2',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     // Fundo Estático
-    <div className="w-screen h-screen bg-gradient-to-r from-sky-800 to-gray-900 flex flex-col">
+    <div className="w-screen py-8 h-screen bg-gradient-to-r from-sky-800 to-gray-900 flex flex-col">
       {/* Container central */}
       <div className="container mx-auto w-2/3 flex-grow flex flex-col">
         {/* Conteúdo principal */}
@@ -20,12 +20,36 @@ const Page = () => {
           <div className="w-12 h-12 border-8 border-blue-200 border-r-blue-600 border-t-blue-600 rounded-full animate-spin"></div>
         </div>
 
-        {/* Pages Interaction */}
-        <div className="mt-auto text-center">
-          <Link href="/" className="underline text-white">
-            Página 1
-          </Link>
+        <div className="flex-grow flex flex-col justify-center items-center text-center mb-8">
+          <h1 className="text-white text-2xl font-bold mb-4">Exercício 6</h1>
+          <p className="text-white mb-4">Hero Card</p>
+          <div className="w-3/4 p-6 overflow-hidden mx-auto bg-slate-800 border border-black rounded-xl flex flex-col justify-center items-center">
+            <Image
+              src="/images/avatar.jpg"
+              alt=""
+              width={72}
+              height={72}
+              className="rounded-full"
+            ></Image>
+            <div className="mt-4 italic text-md">
+              "Texto quote. Trocar para algo relevante. Mais um texto para
+              preencher."
+            </div>
+            <div className="mt-4 text-sm font-bold text-sky-200">
+              Guilherme Lopes
+            </div>
+            <div className="text-sm text-slate-100/90">Desenvolvedor, RJ</div>
+          </div>
         </div>
+      </div>
+      {/* Pages Interaction */}
+      <div className="bg-gray-900 text-white fixed bottom-0 w-full flex justify-center gap-4 py-4">
+        <Link title="Ir para a Página Inicial "href="/" className="underline text-white">
+          Página 1
+        </Link>
+        <Link title="Página de Grid" href="grid" className="underline">
+          Página 3
+        </Link>
       </div>
     </div>
   );

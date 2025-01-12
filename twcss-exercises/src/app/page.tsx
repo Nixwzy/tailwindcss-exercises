@@ -53,7 +53,13 @@ const Page = () => {
         <div className="mt-4 w-96 rounded-md border border-gray-500 bg-white p-4">
           <div>
             <div className="inline-block">
-              <Image className="rounded-full" width={56} height={56} alt ="" src="/images/avatar.jpg" />
+              <Image
+                className="rounded-full"
+                width={56}
+                height={56}
+                alt=""
+                src="/images/avatar.jpg"
+              />
             </div>
             <div className="inline-block ml-5">
               <div className="text-black pb-2">Guilherme Lopes</div>
@@ -113,8 +119,18 @@ const Page = () => {
             </a>
           </div>
         </div>
-        <div className="mt-8">
-          <Link href="page1" className="underline">Página 2</Link>
+        {/* Pages Interaction */}
+        <div className="flex justify-center gap-4 mt-8">
+          <div className="">
+            <Link href="page1" className="underline">
+              Página 2
+            </Link>
+          </div>
+          <div className="">
+            <Link href="grid" className="underline">
+              Página 3
+            </Link>
+          </div>
         </div>
       </div>
     </div>
