@@ -15,8 +15,8 @@ const Page = () => {
       <div className="container mx-auto w-2/3 flex-grow flex flex-col">
         {/* Conteúdo principal */}
         <div className="flex-grow flex flex-col justify-center items-center text-center mb-8">
-          <h1 className="text-white text-2xl font-bold mb-4">Exercício 5</h1>
-          <p className="text-white mb-4">Animação de Loading</p>
+          <h1 className='text-white text-2xl font-bold mb-4'>Exercício 5</h1>
+          <p className='text-white mb-4'>Animação de Loading</p>
           <div className="w-12 h-12 border-8 border-blue-200 border-r-blue-600 border-t-blue-600 rounded-full animate-spin"></div>
         </div>
 
