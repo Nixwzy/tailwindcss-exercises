@@ -21,13 +21,13 @@ const Page = () => {
           </div>
 
           <div className="flex gap-2 my-3 justify-center items-center">
-            <div className="rounded-full px-3 py-1 text-sm bg-green-600 text-white">
+            <div className="rounded-full px-3 py-1 text-sm bg-green-600 text-white cursor-pointer hover:bg-green-700">
               Woods
             </div>
-            <div className="rounded-full px-3 py-1 text-sm bg-green-600 text-white">
+            <div className="rounded-full px-3 py-1 text-sm bg-green-600 text-white cursor-pointer hover:bg-green-700">
               Modern
             </div>
-            <div className="rounded-full px-3 py-1 text-sm bg-green-600 text-white">
+            <div className="rounded-full px-3 py-1 text-sm bg-green-600 text-white cursor-pointer hover:bg-green-700">
               Pool
             </div>
           </div>
